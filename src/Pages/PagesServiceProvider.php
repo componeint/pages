@@ -1,4 +1,10 @@
-<?php namespace Pages;
+<?php
+/**
+ * PagesServiceProvider.php
+ * Created by anonymous on 02/03/16 1:59.
+ */
+
+namespace Pages;
 
 use Illuminate\Support\ServiceProvider;
 
