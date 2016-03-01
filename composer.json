@@ -1,0 +1,45 @@
+{
+  "name"             : "onderdelen/pages",
+  "description"      : "Description pages",
+  "keywords"         : [
+    "onderdelen",
+    "pages"
+  ],
+  "homepage"         : "https://github.com/onderdelen/pages",
+  "license"          : "MIT",
+  "authors"          : [
+    {
+      "name"    : "pages",
+      "email"   : "50c5ac69@opayq.com",
+      "homepage": "https://github.com/onderdelen",
+      "role"    : "Developer"
+    }
+  ],
+  "require"          : {
+    "php"                 : ">=5.5.9",
+    "illuminate/support"  : "5.1.*",
+    "illuminate/contracts": "5.1.*"
+  },
+  "require-dev"      : {
+    "fzaninotto/faker": "~1.4",
+    "mockery/mockery" : "0.9.*",
+    "phpunit/phpunit" : "~4.0",
+    "phpspec/phpspec" : "~2.1"
+  },
+  "autoload"         : {
+    "classmap": [
+      "src/seeds",
+      "src/controllers",
+      "tests"
+    ],
+    "psr-4"   : {
+      "Onderdelen\\Pages\\": "src"
+    }
+  },
+  "autoload-dev"     : {
+    "psr-4": {
+      "Onderdelen\\Pages\\Test\\": "tests"
+    }
+  },
+  "minimum-stability": "stable"
+}
