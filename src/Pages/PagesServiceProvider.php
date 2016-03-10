@@ -4,7 +4,7 @@
  * Created by anonymous on 02/03/16 1:59.
  */
 
-namespace Pages;
+namespace Componeint\Pages;
 
 use ReflectionClass;
 use Illuminate\Foundation\AliasLoader;
