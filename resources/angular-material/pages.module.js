@@ -1,5 +1,5 @@
 /**
- * pages.module
+ * pages.module.js
  * Created by anonymous on 09/03/16 6:49.
  */
 
@@ -8,14 +8,9 @@
 
     angular
         .module('pages', [
-
             /* Shared */
-            'appFoundation',
-            'widgets',
 
-            /* components */
-            'seneschal',
-            'dashboard'
+            /* Components */
 
         ]);
 
