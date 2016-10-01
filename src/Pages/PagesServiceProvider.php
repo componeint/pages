@@ -1,7 +1,7 @@
 <?php
 /**
  * PagesServiceProvider.php
- * Created by anonymous on 02/03/16 1:59.
+ * Created by @anonymoussc on 02/03/16 1:59.
  */
 
 namespace Componeint\Pages;
@@ -12,7 +12,6 @@ use Illuminate\Support\ServiceProvider;
 
 class PagesServiceProvider extends ServiceProvider
 {
-
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -27,7 +26,12 @@ class PagesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $componenentsFileName = with(new ReflectionClass('\Componeint\Pages\PagesServiceProvider'))->getFileName();
+        $componenentsPath     = dirname($componenentsFileName);
 
+        $this->loadViewsFrom($componenentsPath . '/../../resources/views', 'pages');
+
+        // include $componenentsPath . '/../routes.php';
     }
 
     /**
