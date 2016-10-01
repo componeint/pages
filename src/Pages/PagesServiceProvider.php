@@ -53,5 +53,4 @@ class PagesServiceProvider extends ServiceProvider
     {
         return [];
     }
-
 }
